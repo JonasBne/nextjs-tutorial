@@ -7,19 +7,28 @@
     <script type="text/jsx">
         const app = document.getElementById('app');
 
-        const Header = ({ title }) => <h1>{ title }</h1>
-        const Footer = () => <footer>Footer</footer>
+        const Header = ({ title }) => <h1>{ title }</h1>;
 
-        const App = () => {
-        return (
-            <>
+        const HomePage = () => {
+            const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
+            const [likes, setLikes] = React.useState(0);
+          
+            return (
+              <div>
                 <Header title="Develop. Preview. Ship. 🚀" />
-                <Footer />
-            </>    
-            )
-        }
+                <ul>
+                  {names.map((name) => (
+                    <li key={name}>{name}</li>
+                  ))}
+                </ul>
+          
+                <button onClick={() => setLikes(prevLikesCount => prevLikesCount + 1)}>Like</button>
+                <span> # of likes: {likes}</span>
+              </div>
+            );
+          }
 
-        ReactDOM.render(<App />, app)
+        ReactDOM.render(<HomePage />, app)
     </script>
   </body>
 </html>
