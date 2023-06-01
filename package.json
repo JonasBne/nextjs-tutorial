@@ -1,0 +1,33 @@
+{
+  "name": "nextjs-tutorial",
+  "version": "1.0.0",
+  "description": "Nextjs tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonasBne/nextjs-tutorial.git"
+  },
+  "keywords": [
+    "nextjs",
+    "react",
+    "javascript",
+    "typescript",
+    "ssg",
+    "ssr"
+  ],
+  "author": "Jonas Boone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JonasBne/nextjs-tutorial/issues"
+  },
+  "homepage": "https://github.com/JonasBne/nextjs-tutorial#readme",
+  "dependencies": {
+    "next": "^13.4.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
